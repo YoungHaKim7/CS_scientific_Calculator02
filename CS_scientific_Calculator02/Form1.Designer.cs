@@ -49,6 +49,31 @@
             btnEquals = new Button();
             btndot = new Button();
             btn0 = new Button();
+            menuStrip1 = new MenuStrip();
+            fileToolStripMenuItem = new ToolStripMenuItem();
+            scientificToolStripMenuItem = new ToolStripMenuItem();
+            simpleToolStripMenuItem = new ToolStripMenuItem();
+            btnPi = new Button();
+            btnLog = new Button();
+            btnSq = new Button();
+            btnx2 = new Button();
+            btnx3 = new Button();
+            btnDec = new Button();
+            btnSin = new Button();
+            btnSinh = new Button();
+            btnlnx = new Button();
+            btnHex = new Button();
+            btnTan = new Button();
+            btnTanh = new Button();
+            btn1x = new Button();
+            btnBin = new Button();
+            btnCos = new Button();
+            btnCosh = new Button();
+            btnPer = new Button();
+            btnOct = new Button();
+            btnMod = new Button();
+            btnExp = new Button();
+            menuStrip1.SuspendLayout();
             SuspendLayout();
             // 
             // txtResult
@@ -91,6 +116,7 @@
             btnClearEntry.TabIndex = 3;
             btnClearEntry.Text = "C";
             btnClearEntry.UseVisualStyleBackColor = true;
+            btnClearEntry.Click += btnClearEntry_Click;
             // 
             // btnPM
             // 
@@ -279,11 +305,267 @@
             btn0.UseVisualStyleBackColor = true;
             btn0.Click += EnterNumbers;
             // 
+            // menuStrip1
+            // 
+            menuStrip1.Items.AddRange(new ToolStripItem[] { fileToolStripMenuItem });
+            menuStrip1.Location = new Point(0, 0);
+            menuStrip1.Name = "menuStrip1";
+            menuStrip1.Size = new Size(751, 24);
+            menuStrip1.TabIndex = 21;
+            menuStrip1.Text = "menuStrip1";
+            // 
+            // fileToolStripMenuItem
+            // 
+            fileToolStripMenuItem.DropDownItems.AddRange(new ToolStripItem[] { scientificToolStripMenuItem, simpleToolStripMenuItem });
+            fileToolStripMenuItem.Name = "fileToolStripMenuItem";
+            fileToolStripMenuItem.Size = new Size(37, 20);
+            fileToolStripMenuItem.Text = "File";
+            // 
+            // scientificToolStripMenuItem
+            // 
+            scientificToolStripMenuItem.Name = "scientificToolStripMenuItem";
+            scientificToolStripMenuItem.Size = new Size(123, 22);
+            scientificToolStripMenuItem.Text = "Scientific";
+            scientificToolStripMenuItem.Click += scientificToolStripMenuItem_Click;
+            // 
+            // simpleToolStripMenuItem
+            // 
+            simpleToolStripMenuItem.Name = "simpleToolStripMenuItem";
+            simpleToolStripMenuItem.Size = new Size(123, 22);
+            simpleToolStripMenuItem.Text = "Standard";
+            simpleToolStripMenuItem.Click += standardToolStripMenuItem_Click;
+            // 
+            // btnPi
+            // 
+            btnPi.Font = new Font("Malgun Gothic", 21.75F, FontStyle.Bold, GraphicsUnit.Point);
+            btnPi.Location = new Point(376, 75);
+            btnPi.Name = "btnPi";
+            btnPi.Size = new Size(78, 71);
+            btnPi.TabIndex = 22;
+            btnPi.Text = "π";
+            btnPi.UseVisualStyleBackColor = true;
+            btnPi.Click += btnPi_Click;
+            // 
+            // btnLog
+            // 
+            btnLog.Font = new Font("Malgun Gothic", 21.75F, FontStyle.Bold, GraphicsUnit.Point);
+            btnLog.Location = new Point(460, 75);
+            btnLog.Name = "btnLog";
+            btnLog.Size = new Size(78, 71);
+            btnLog.TabIndex = 23;
+            btnLog.Text = "Log";
+            btnLog.UseVisualStyleBackColor = true;
+            btnLog.Click += btnLog_Click;
+            // 
+            // btnSq
+            // 
+            btnSq.Font = new Font("Malgun Gothic", 20.25F, FontStyle.Bold, GraphicsUnit.Point);
+            btnSq.Location = new Point(544, 75);
+            btnSq.Name = "btnSq";
+            btnSq.Size = new Size(78, 71);
+            btnSq.TabIndex = 24;
+            btnSq.Text = "Sqrt";
+            btnSq.UseVisualStyleBackColor = true;
+            btnSq.Click += btnSq_Click;
+            // 
+            // btnx2
+            // 
+            btnx2.Font = new Font("Malgun Gothic", 21.75F, FontStyle.Bold, GraphicsUnit.Point);
+            btnx2.Location = new Point(628, 75);
+            btnx2.Name = "btnx2";
+            btnx2.Size = new Size(78, 71);
+            btnx2.TabIndex = 25;
+            btnx2.Text = "x²";
+            btnx2.UseVisualStyleBackColor = true;
+            btnx2.Click += btnx2_Click;
+            // 
+            // btnx3
+            // 
+            btnx3.Font = new Font("Malgun Gothic", 21.75F, FontStyle.Bold, GraphicsUnit.Point);
+            btnx3.Location = new Point(628, 152);
+            btnx3.Name = "btnx3";
+            btnx3.Size = new Size(78, 71);
+            btnx3.TabIndex = 29;
+            btnx3.Text = "x³";
+            btnx3.UseVisualStyleBackColor = true;
+            // 
+            // btnDec
+            // 
+            btnDec.Font = new Font("Malgun Gothic", 21.75F, FontStyle.Bold, GraphicsUnit.Point);
+            btnDec.Location = new Point(544, 152);
+            btnDec.Name = "btnDec";
+            btnDec.Size = new Size(78, 71);
+            btnDec.TabIndex = 28;
+            btnDec.Text = "Dec";
+            btnDec.UseVisualStyleBackColor = true;
+            // 
+            // btnSin
+            // 
+            btnSin.Font = new Font("Malgun Gothic", 21.75F, FontStyle.Bold, GraphicsUnit.Point);
+            btnSin.Location = new Point(460, 152);
+            btnSin.Name = "btnSin";
+            btnSin.Size = new Size(78, 71);
+            btnSin.TabIndex = 27;
+            btnSin.Text = "Sin";
+            btnSin.UseVisualStyleBackColor = true;
+            btnSin.Click += btnSin_Click;
+            // 
+            // btnSinh
+            // 
+            btnSinh.Font = new Font("Malgun Gothic", 18F, FontStyle.Bold, GraphicsUnit.Point);
+            btnSinh.Location = new Point(376, 152);
+            btnSinh.Name = "btnSinh";
+            btnSinh.Size = new Size(78, 71);
+            btnSinh.TabIndex = 26;
+            btnSinh.Text = "Sinh";
+            btnSinh.UseVisualStyleBackColor = true;
+            btnSinh.Click += btnSinh_Click;
+            // 
+            // btnlnx
+            // 
+            btnlnx.Font = new Font("Malgun Gothic", 21.75F, FontStyle.Bold, GraphicsUnit.Point);
+            btnlnx.Location = new Point(628, 306);
+            btnlnx.Name = "btnlnx";
+            btnlnx.Size = new Size(78, 71);
+            btnlnx.TabIndex = 37;
+            btnlnx.Text = "ln x";
+            btnlnx.UseVisualStyleBackColor = true;
+            // 
+            // btnHex
+            // 
+            btnHex.Font = new Font("Malgun Gothic", 18F, FontStyle.Bold, GraphicsUnit.Point);
+            btnHex.Location = new Point(544, 306);
+            btnHex.Name = "btnHex";
+            btnHex.Size = new Size(78, 71);
+            btnHex.TabIndex = 36;
+            btnHex.Text = "Hex";
+            btnHex.UseVisualStyleBackColor = true;
+            // 
+            // btnTan
+            // 
+            btnTan.Font = new Font("Malgun Gothic", 21.75F, FontStyle.Bold, GraphicsUnit.Point);
+            btnTan.Location = new Point(460, 306);
+            btnTan.Name = "btnTan";
+            btnTan.Size = new Size(78, 71);
+            btnTan.TabIndex = 35;
+            btnTan.Text = "Tan";
+            btnTan.UseVisualStyleBackColor = true;
+            // 
+            // btnTanh
+            // 
+            btnTanh.Font = new Font("Malgun Gothic", 17.25F, FontStyle.Bold, GraphicsUnit.Point);
+            btnTanh.Location = new Point(376, 306);
+            btnTanh.Name = "btnTanh";
+            btnTanh.Size = new Size(78, 71);
+            btnTanh.TabIndex = 34;
+            btnTanh.Text = "Tanh";
+            btnTanh.UseVisualStyleBackColor = true;
+            // 
+            // btn1x
+            // 
+            btn1x.Font = new Font("Malgun Gothic", 21.75F, FontStyle.Bold, GraphicsUnit.Point);
+            btn1x.Location = new Point(628, 229);
+            btn1x.Name = "btn1x";
+            btn1x.Size = new Size(78, 71);
+            btn1x.TabIndex = 33;
+            btn1x.Text = "1/x";
+            btn1x.UseVisualStyleBackColor = true;
+            // 
+            // btnBin
+            // 
+            btnBin.Font = new Font("Malgun Gothic", 21.75F, FontStyle.Bold, GraphicsUnit.Point);
+            btnBin.Location = new Point(544, 229);
+            btnBin.Name = "btnBin";
+            btnBin.Size = new Size(78, 71);
+            btnBin.TabIndex = 32;
+            btnBin.Text = "Bin";
+            btnBin.UseVisualStyleBackColor = true;
+            // 
+            // btnCos
+            // 
+            btnCos.Font = new Font("Malgun Gothic", 21.75F, FontStyle.Bold, GraphicsUnit.Point);
+            btnCos.Location = new Point(460, 229);
+            btnCos.Name = "btnCos";
+            btnCos.Size = new Size(78, 71);
+            btnCos.TabIndex = 31;
+            btnCos.Text = "Cos";
+            btnCos.UseVisualStyleBackColor = true;
+            // 
+            // btnCosh
+            // 
+            btnCosh.Font = new Font("Malgun Gothic", 18F, FontStyle.Bold, GraphicsUnit.Point);
+            btnCosh.Location = new Point(376, 229);
+            btnCosh.Name = "btnCosh";
+            btnCosh.Size = new Size(78, 71);
+            btnCosh.TabIndex = 30;
+            btnCosh.Text = "Cosh";
+            btnCosh.UseVisualStyleBackColor = true;
+            // 
+            // btnPer
+            // 
+            btnPer.Font = new Font("Malgun Gothic", 21.75F, FontStyle.Bold, GraphicsUnit.Point);
+            btnPer.Location = new Point(628, 383);
+            btnPer.Name = "btnPer";
+            btnPer.Size = new Size(78, 71);
+            btnPer.TabIndex = 41;
+            btnPer.Text = "%";
+            btnPer.UseVisualStyleBackColor = true;
+            // 
+            // btnOct
+            // 
+            btnOct.Font = new Font("Malgun Gothic", 21.75F, FontStyle.Bold, GraphicsUnit.Point);
+            btnOct.Location = new Point(544, 383);
+            btnOct.Name = "btnOct";
+            btnOct.Size = new Size(78, 71);
+            btnOct.TabIndex = 40;
+            btnOct.Text = "Oct";
+            btnOct.UseVisualStyleBackColor = true;
+            // 
+            // btnMod
+            // 
+            btnMod.Font = new Font("Malgun Gothic", 18F, FontStyle.Bold, GraphicsUnit.Point);
+            btnMod.Location = new Point(460, 383);
+            btnMod.Name = "btnMod";
+            btnMod.Size = new Size(78, 71);
+            btnMod.TabIndex = 39;
+            btnMod.Text = "Mod";
+            btnMod.UseVisualStyleBackColor = true;
+            // 
+            // btnExp
+            // 
+            btnExp.Font = new Font("Malgun Gothic", 21.75F, FontStyle.Bold, GraphicsUnit.Point);
+            btnExp.Location = new Point(376, 383);
+            btnExp.Name = "btnExp";
+            btnExp.Size = new Size(78, 71);
+            btnExp.TabIndex = 38;
+            btnExp.Text = "Exp";
+            btnExp.UseVisualStyleBackColor = true;
+            // 
             // Form1
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(800, 483);
+            ClientSize = new Size(751, 483);
+            Controls.Add(btnPer);
+            Controls.Add(btnOct);
+            Controls.Add(btnMod);
+            Controls.Add(btnExp);
+            Controls.Add(btnlnx);
+            Controls.Add(btnHex);
+            Controls.Add(btnTan);
+            Controls.Add(btnTanh);
+            Controls.Add(btn1x);
+            Controls.Add(btnBin);
+            Controls.Add(btnCos);
+            Controls.Add(btnCosh);
+            Controls.Add(btnx3);
+            Controls.Add(btnDec);
+            Controls.Add(btnSin);
+            Controls.Add(btnSinh);
+            Controls.Add(btnx2);
+            Controls.Add(btnSq);
+            Controls.Add(btnLog);
+            Controls.Add(btnPi);
             Controls.Add(btnDiv);
             Controls.Add(btnEquals);
             Controls.Add(btndot);
@@ -305,9 +587,14 @@
             Controls.Add(btnClear);
             Controls.Add(btnBS);
             Controls.Add(txtResult);
+            Controls.Add(menuStrip1);
+            MainMenuStrip = menuStrip1;
             Name = "Form1";
             Text = "Form1";
+            Load += Form1_Load;
             Click += EnterNumbers;
+            menuStrip1.ResumeLayout(false);
+            menuStrip1.PerformLayout();
             ResumeLayout(false);
             PerformLayout();
         }
@@ -335,5 +622,29 @@
         private Button btnEquals;
         private Button btndot;
         private Button btn0;
+        private MenuStrip menuStrip1;
+        private ToolStripMenuItem fileToolStripMenuItem;
+        private ToolStripMenuItem scientificToolStripMenuItem;
+        private ToolStripMenuItem simpleToolStripMenuItem;
+        private Button btnPi;
+        private Button btnLog;
+        private Button btnSq;
+        private Button btnx2;
+        private Button btnx3;
+        private Button btnDec;
+        private Button btnSin;
+        private Button btnSinh;
+        private Button btnlnx;
+        private Button btnHex;
+        private Button btnTan;
+        private Button btnTanh;
+        private Button btn1x;
+        private Button btnBin;
+        private Button btnCos;
+        private Button btnCosh;
+        private Button btnPer;
+        private Button btnOct;
+        private Button btnMod;
+        private Button btnExp;
     }
 }
