@@ -10,7 +10,7 @@ namespace CS_scientific_Calculator02
             InitializeComponent();
         }
 
-        private void btnPM_Click(object sender, EventArgs e)
+        private void BtnPM_Click(object sender, EventArgs e)
         {
             double q = Convert.ToDouble(txtResult.Text);
             txtResult.Text = Convert.ToString(-1 * q);
@@ -35,7 +35,7 @@ namespace CS_scientific_Calculator02
             }
         }
 
-        private void numberOper(object sender, EventArgs e)
+        private void NumberOper(object sender, EventArgs e)
         {
             Button num = (Button)sender;
 
@@ -44,7 +44,7 @@ namespace CS_scientific_Calculator02
             txtResult.Text = "";
         }
 
-        private void btnEquals_Click(object sender, EventArgs e)
+        private void BtnEquals_Click(object sender, EventArgs e)
         {
 
             double v = Convert.ToDouble(txtResult.Text);
@@ -72,12 +72,12 @@ namespace CS_scientific_Calculator02
             }
         }
 
-        private void btnClear_Click(object sender, EventArgs e)
+        private void BtnClear_Click(object sender, EventArgs e)
         {
             txtResult.Text = "0";
         }
 
-        private void btnBS_Click(object sender, EventArgs e)
+        private void BtnBS_Click(object sender, EventArgs e)
         {
             if (txtResult.Text.Length > 0)
             {
@@ -90,7 +90,7 @@ namespace CS_scientific_Calculator02
             }
         }
 
-        private void btnClearEntry_Click(object sender, EventArgs e)
+        private void BtnClearEntry_Click(object sender, EventArgs e)
         {
             txtResult.Text = "0";
 
@@ -107,38 +107,38 @@ namespace CS_scientific_Calculator02
             this.Width = 370; // 767
             txtResult.Width = 330;
         }
-        private void scientificToolStripMenuItem_Click(object sender, EventArgs e)
+        private void ScientificToolStripMenuItem_Click(object sender, EventArgs e)
         {
             this.Width = 760;
             txtResult.Width = 690;
         }
 
-        private void standardToolStripMenuItem_Click(object sender, EventArgs e)
+        private void StandardToolStripMenuItem_Click(object sender, EventArgs e)
         {
             this.Width = 370;
             txtResult.Width = 330;
         }
 
-        private void btnPi_Click(object sender, EventArgs e)
+        private void BtnPi_Click(object sender, EventArgs e)
         {
             txtResult.Text = "3.14159265358979323";
         }
 
-        private void btnLog_Click(object sender, EventArgs e)
+        private void BtnLog_Click(object sender, EventArgs e)
         {
             double logg = Convert.ToDouble(txtResult.Text);
             logg = Math.Log10(logg);
             txtResult.Text = Convert.ToString(logg);
         }
 
-        private void btnSq_Click(object sender, EventArgs e)
+        private void BtnSq_Click(object sender, EventArgs e)
         {
             double sq = Convert.ToDouble(txtResult.Text);
             sq = Math.Sqrt(sq);
             txtResult.Text = Convert.ToString(sq);
         }
 
-        private void btnx2_Click(object sender, EventArgs e)
+        private void Btnx2_Click(object sender, EventArgs e)
         {
             double x;
 
@@ -146,19 +146,55 @@ namespace CS_scientific_Calculator02
             txtResult.Text = Convert.ToString(x);
         }
 
-        private void btnSinh_Click(object sender, EventArgs e)
+        private void BtnSinh_Click(object sender, EventArgs e)
         {
             double sh = Convert.ToDouble(txtResult.Text);
             sh = Math.Sinh(sh);
             txtResult.Text = Convert.ToString(sh);
         }
 
-        private void btnSin_Click(object sender, EventArgs e)
+        private void BtnSin_Click(object sender, EventArgs e)
         {
 
             double si = Convert.ToDouble(txtResult.Text);
             si = Math.Sin(si);
             txtResult.Text = Convert.ToString(si);
+        }
+         
+        private void BtnPer_Click(object sender, EventArgs e)
+        {
+            double a;
+
+            a = Convert.ToDouble(txtResult.Text) / Convert.ToDouble(100);
+
+            txtResult.Text = Convert.ToString(a);
+        }
+
+        private void BtnDec_Click(object sender, EventArgs e)
+        {
+            double dec = Convert.ToDouble(txtResult.Text);
+
+            int i1 = Convert.ToInt32(dec);
+            int i2 = (int)dec;
+            txtResult.Text = Convert.ToString(i2);
+        }
+
+        private void BtnHex_Click(object sender, EventArgs e)
+        {
+            int a = int.Parse(txtResult.Text);
+            txtResult.Text = Convert.ToString(a, 16);
+        }
+
+        private void BtnBin_Click(object sender, EventArgs e)
+        {
+            int a = int.Parse(txtResult.Text);
+            txtResult.Text = Convert.ToString(a, 2);
+        }
+
+        private void BtnOct_Click(object sender, EventArgs e)
+        {
+            int a = int.Parse(txtResult.Text);
+            txtResult.Text = Convert.ToString(a, 8);
         }
     }
 }
