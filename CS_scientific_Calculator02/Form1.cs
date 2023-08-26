@@ -9,6 +9,23 @@ namespace CS_scientific_Calculator02
         {
             InitializeComponent();
         }
+        // Windows size (standard vs scientific)
+        private void Form1_Load(object sender, EventArgs e)
+        {
+            this.Width = 370; // 767
+            txtResult.Width = 330;
+        }
+        private void ScientificToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            this.Width = 760;
+            txtResult.Width = 690;
+        }
+
+        private void StandardToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            this.Width = 370;
+            txtResult.Width = 330;
+        }
 
         private void BtnPM_Click(object sender, EventArgs e)
         {
@@ -18,7 +35,7 @@ namespace CS_scientific_Calculator02
 
         private void EnterNumbers(object sender, EventArgs e)
         {
-            Button num = sender as Button;
+            Button num = (Button)sender;
 
             if (txtResult.Text == "0")
                 txtResult.Text = "";
@@ -68,6 +85,18 @@ namespace CS_scientific_Calculator02
                     txtResult.Text = (enterFirstValue / enterSecondValue).ToString();
                     break;
 
+                case "Mod":
+                    txtResult.Text = (enterFirstValue % enterSecondValue).ToString();
+                    break;
+
+                case "Exp":
+                    double i = Convert.ToDouble(txtResult.Text);
+                    double j;
+                    j = enterSecondValue;
+                    txtResult.Text = Math.Exp(i * Math.Log(j * 4)).ToString();
+                    break;
+
+
                 default: break;
             }
         }
@@ -101,22 +130,6 @@ namespace CS_scientific_Calculator02
 
             f = "";
             s = "";
-        }
-        private void Form1_Load(object sender, EventArgs e)
-        {
-            this.Width = 370; // 767
-            txtResult.Width = 330;
-        }
-        private void ScientificToolStripMenuItem_Click(object sender, EventArgs e)
-        {
-            this.Width = 760;
-            txtResult.Width = 690;
-        }
-
-        private void StandardToolStripMenuItem_Click(object sender, EventArgs e)
-        {
-            this.Width = 370;
-            txtResult.Width = 330;
         }
 
         private void BtnPi_Click(object sender, EventArgs e)
@@ -195,6 +208,34 @@ namespace CS_scientific_Calculator02
         {
             int a = int.Parse(txtResult.Text);
             txtResult.Text = Convert.ToString(a, 8);
+        }
+
+        private void BtnCosh_Click(object sender, EventArgs e)
+        {
+            double cosh = Convert.ToDouble(txtResult.Text);
+            cosh = Math.Cosh(cosh);
+            txtResult.Text = Convert.ToString(cosh);
+        }
+
+        private void BtnCos_Click(object sender, EventArgs e)
+        {
+            double cos = Convert.ToDouble(txtResult.Text);
+            cos = Math.Cos(cos);
+            txtResult.Text = Convert.ToString(cos);
+        }
+
+        private void BtnTanh_Click(object sender, EventArgs e)
+        {
+            double tanh = Convert.ToDouble(txtResult.Text);
+            tanh = Math.Tanh(tanh);
+            txtResult.Text = Convert.ToString(tanh);
+        }
+
+        private void BtnTan_Click(object sender, EventArgs e)
+        {
+            double tan = Convert.ToDouble(txtResult.Text);
+            tan = Math.Tan(tan);
+            txtResult.Text = Convert.ToString(tan);
         }
     }
 }
