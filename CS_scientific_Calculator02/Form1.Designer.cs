@@ -29,46 +29,46 @@
         private void InitializeComponent()
         {
             txtResult = new TextBox();
-            btnBS = new Button();
-            btnClear = new Button();
-            btnClearEntry = new Button();
-            btnPM = new Button();
-            btnPlus = new Button();
-            btn9 = new Button();
-            btn8 = new Button();
-            btn7 = new Button();
-            btnMinus = new Button();
-            btn6 = new Button();
-            btn5 = new Button();
-            btn4 = new Button();
-            btnMuti = new Button();
-            btn3 = new Button();
-            btn2 = new Button();
-            btn1 = new Button();
-            btnDiv = new Button();
-            btnEquals = new Button();
-            btndot = new Button();
-            btn0 = new Button();
+            BtnBS = new Button();
+            BtnClear = new Button();
+            BtnClearEntry = new Button();
+            BtnPM = new Button();
+            BtnPlus = new Button();
+            Btn9 = new Button();
+            Btn8 = new Button();
+            Btn7 = new Button();
+            BtnMinus = new Button();
+            Btn6 = new Button();
+            Btn5 = new Button();
+            Btn4 = new Button();
+            BtnMuti = new Button();
+            Btn3 = new Button();
+            Btn2 = new Button();
+            Btn1 = new Button();
+            BtnDiv = new Button();
+            BtnEquals = new Button();
+            Btndot = new Button();
+            Btn0 = new Button();
             menuStrip1 = new MenuStrip();
             fileToolStripMenuItem = new ToolStripMenuItem();
             scientificToolStripMenuItem = new ToolStripMenuItem();
             simpleToolStripMenuItem = new ToolStripMenuItem();
-            btnPi = new Button();
-            btnLog = new Button();
-            btnSq = new Button();
-            btnx2 = new Button();
-            btnx3 = new Button();
-            btnDec = new Button();
-            btnSin = new Button();
-            btnSinh = new Button();
+            BtnPi = new Button();
+            BtnLog = new Button();
+            BtnSq = new Button();
+            Btnx2 = new Button();
+            Btnx3 = new Button();
+            BtnDec = new Button();
+            BtnSin = new Button();
+            BtnSinh = new Button();
             btnlnx = new Button();
             btnHex = new Button();
             btnTan = new Button();
             btnTanh = new Button();
             btn1x = new Button();
-            btnBin = new Button();
-            btnCos = new Button();
-            btnCosh = new Button();
+            BtnBin = new Button();
+            BtnCos = new Button();
+            BtnCosh = new Button();
             btnPer = new Button();
             btnOct = new Button();
             btnMod = new Button();
@@ -85,225 +85,225 @@
             txtResult.TabIndex = 0;
             txtResult.TextAlign = HorizontalAlignment.Right;
             // 
-            // btnBS
+            // BtnBS
             // 
-            btnBS.Font = new Font("Malgun Gothic", 21.75F, FontStyle.Bold, GraphicsUnit.Point);
-            btnBS.Location = new Point(12, 75);
-            btnBS.Name = "btnBS";
-            btnBS.Size = new Size(78, 71);
-            btnBS.TabIndex = 1;
-            btnBS.Text = "⌫";
-            btnBS.UseVisualStyleBackColor = true;
-            btnBS.Click += BtnBS_Click;
+            BtnBS.Font = new Font("Malgun Gothic", 21.75F, FontStyle.Bold, GraphicsUnit.Point);
+            BtnBS.Location = new Point(12, 75);
+            BtnBS.Name = "BtnBS";
+            BtnBS.Size = new Size(78, 71);
+            BtnBS.TabIndex = 1;
+            BtnBS.Text = "⌫";
+            BtnBS.UseVisualStyleBackColor = true;
+            BtnBS.Click += BtnBS_Click;
             // 
-            // btnClear
+            // BtnClear
             // 
-            btnClear.Font = new Font("Malgun Gothic", 21.75F, FontStyle.Bold, GraphicsUnit.Point);
-            btnClear.Location = new Point(96, 75);
-            btnClear.Name = "btnClear";
-            btnClear.Size = new Size(78, 71);
-            btnClear.TabIndex = 2;
-            btnClear.Text = "CE";
-            btnClear.UseVisualStyleBackColor = true;
-            btnClear.Click += BtnClear_Click;
+            BtnClear.Font = new Font("Malgun Gothic", 21.75F, FontStyle.Bold, GraphicsUnit.Point);
+            BtnClear.Location = new Point(96, 75);
+            BtnClear.Name = "BtnClear";
+            BtnClear.Size = new Size(78, 71);
+            BtnClear.TabIndex = 2;
+            BtnClear.Text = "CE";
+            BtnClear.UseVisualStyleBackColor = true;
+            BtnClear.Click += BtnClear_Click;
             // 
-            // btnClearEntry
+            // BtnClearEntry
             // 
-            btnClearEntry.Font = new Font("Malgun Gothic", 21.75F, FontStyle.Bold, GraphicsUnit.Point);
-            btnClearEntry.Location = new Point(180, 75);
-            btnClearEntry.Name = "btnClearEntry";
-            btnClearEntry.Size = new Size(78, 71);
-            btnClearEntry.TabIndex = 3;
-            btnClearEntry.Text = "C";
-            btnClearEntry.UseVisualStyleBackColor = true;
-            btnClearEntry.Click += BtnClearEntry_Click;
+            BtnClearEntry.Font = new Font("Malgun Gothic", 21.75F, FontStyle.Bold, GraphicsUnit.Point);
+            BtnClearEntry.Location = new Point(180, 75);
+            BtnClearEntry.Name = "BtnClearEntry";
+            BtnClearEntry.Size = new Size(78, 71);
+            BtnClearEntry.TabIndex = 3;
+            BtnClearEntry.Text = "C";
+            BtnClearEntry.UseVisualStyleBackColor = true;
+            BtnClearEntry.Click += BtnClearEntry_Click;
             // 
-            // btnPM
+            // BtnPM
             // 
-            btnPM.Font = new Font("Malgun Gothic", 21.75F, FontStyle.Bold, GraphicsUnit.Point);
-            btnPM.Location = new Point(264, 75);
-            btnPM.Name = "btnPM";
-            btnPM.Size = new Size(78, 71);
-            btnPM.TabIndex = 4;
-            btnPM.Text = "±";
-            btnPM.UseVisualStyleBackColor = true;
-            btnPM.Click += BtnPM_Click;
+            BtnPM.Font = new Font("Malgun Gothic", 21.75F, FontStyle.Bold, GraphicsUnit.Point);
+            BtnPM.Location = new Point(264, 75);
+            BtnPM.Name = "BtnPM";
+            BtnPM.Size = new Size(78, 71);
+            BtnPM.TabIndex = 4;
+            BtnPM.Text = "±";
+            BtnPM.UseVisualStyleBackColor = true;
+            BtnPM.Click += BtnPM_Click;
             // 
-            // btnPlus
+            // BtnPlus
             // 
-            btnPlus.Font = new Font("Malgun Gothic", 21.75F, FontStyle.Bold, GraphicsUnit.Point);
-            btnPlus.Location = new Point(264, 152);
-            btnPlus.Name = "btnPlus";
-            btnPlus.Size = new Size(78, 71);
-            btnPlus.TabIndex = 8;
-            btnPlus.Text = "+";
-            btnPlus.UseVisualStyleBackColor = true;
-            btnPlus.Click += NumberOper;
+            BtnPlus.Font = new Font("Malgun Gothic", 21.75F, FontStyle.Bold, GraphicsUnit.Point);
+            BtnPlus.Location = new Point(264, 152);
+            BtnPlus.Name = "BtnPlus";
+            BtnPlus.Size = new Size(78, 71);
+            BtnPlus.TabIndex = 8;
+            BtnPlus.Text = "+";
+            BtnPlus.UseVisualStyleBackColor = true;
+            BtnPlus.Click += NumberOper;
             // 
-            // btn9
+            // Btn9
             // 
-            btn9.Font = new Font("Malgun Gothic", 21.75F, FontStyle.Bold, GraphicsUnit.Point);
-            btn9.Location = new Point(180, 152);
-            btn9.Name = "btn9";
-            btn9.Size = new Size(78, 71);
-            btn9.TabIndex = 7;
-            btn9.Text = "9";
-            btn9.UseVisualStyleBackColor = true;
-            btn9.Click += EnterNumbers;
+            Btn9.Font = new Font("Malgun Gothic", 21.75F, FontStyle.Bold, GraphicsUnit.Point);
+            Btn9.Location = new Point(180, 152);
+            Btn9.Name = "Btn9";
+            Btn9.Size = new Size(78, 71);
+            Btn9.TabIndex = 7;
+            Btn9.Text = "9";
+            Btn9.UseVisualStyleBackColor = true;
+            Btn9.Click += EnterNumbers;
             // 
-            // btn8
+            // Btn8
             // 
-            btn8.Font = new Font("Malgun Gothic", 21.75F, FontStyle.Bold, GraphicsUnit.Point);
-            btn8.Location = new Point(96, 152);
-            btn8.Name = "btn8";
-            btn8.Size = new Size(78, 71);
-            btn8.TabIndex = 6;
-            btn8.Text = "8";
-            btn8.UseVisualStyleBackColor = true;
-            btn8.Click += EnterNumbers;
+            Btn8.Font = new Font("Malgun Gothic", 21.75F, FontStyle.Bold, GraphicsUnit.Point);
+            Btn8.Location = new Point(96, 152);
+            Btn8.Name = "Btn8";
+            Btn8.Size = new Size(78, 71);
+            Btn8.TabIndex = 6;
+            Btn8.Text = "8";
+            Btn8.UseVisualStyleBackColor = true;
+            Btn8.Click += EnterNumbers;
             // 
-            // btn7
+            // Btn7
             // 
-            btn7.Font = new Font("Malgun Gothic", 21.75F, FontStyle.Bold, GraphicsUnit.Point);
-            btn7.Location = new Point(12, 152);
-            btn7.Name = "btn7";
-            btn7.Size = new Size(78, 71);
-            btn7.TabIndex = 5;
-            btn7.Text = "7";
-            btn7.UseVisualStyleBackColor = true;
-            btn7.Click += EnterNumbers;
+            Btn7.Font = new Font("Malgun Gothic", 21.75F, FontStyle.Bold, GraphicsUnit.Point);
+            Btn7.Location = new Point(12, 152);
+            Btn7.Name = "Btn7";
+            Btn7.Size = new Size(78, 71);
+            Btn7.TabIndex = 5;
+            Btn7.Text = "7";
+            Btn7.UseVisualStyleBackColor = true;
+            Btn7.Click += EnterNumbers;
             // 
-            // btnMinus
+            // BtnMinus
             // 
-            btnMinus.Font = new Font("Malgun Gothic", 21.75F, FontStyle.Bold, GraphicsUnit.Point);
-            btnMinus.Location = new Point(264, 229);
-            btnMinus.Name = "btnMinus";
-            btnMinus.Size = new Size(78, 71);
-            btnMinus.TabIndex = 12;
-            btnMinus.Text = "-";
-            btnMinus.UseVisualStyleBackColor = true;
-            btnMinus.Click += NumberOper;
+            BtnMinus.Font = new Font("Malgun Gothic", 21.75F, FontStyle.Bold, GraphicsUnit.Point);
+            BtnMinus.Location = new Point(264, 229);
+            BtnMinus.Name = "BtnMinus";
+            BtnMinus.Size = new Size(78, 71);
+            BtnMinus.TabIndex = 12;
+            BtnMinus.Text = "-";
+            BtnMinus.UseVisualStyleBackColor = true;
+            BtnMinus.Click += NumberOper;
             // 
-            // btn6
+            // Btn6
             // 
-            btn6.Font = new Font("Malgun Gothic", 21.75F, FontStyle.Bold, GraphicsUnit.Point);
-            btn6.Location = new Point(180, 229);
-            btn6.Name = "btn6";
-            btn6.Size = new Size(78, 71);
-            btn6.TabIndex = 11;
-            btn6.Text = "6";
-            btn6.UseVisualStyleBackColor = true;
-            btn6.Click += EnterNumbers;
+            Btn6.Font = new Font("Malgun Gothic", 21.75F, FontStyle.Bold, GraphicsUnit.Point);
+            Btn6.Location = new Point(180, 229);
+            Btn6.Name = "Btn6";
+            Btn6.Size = new Size(78, 71);
+            Btn6.TabIndex = 11;
+            Btn6.Text = "6";
+            Btn6.UseVisualStyleBackColor = true;
+            Btn6.Click += EnterNumbers;
             // 
-            // btn5
+            // Btn5
             // 
-            btn5.Font = new Font("Malgun Gothic", 21.75F, FontStyle.Bold, GraphicsUnit.Point);
-            btn5.Location = new Point(96, 229);
-            btn5.Name = "btn5";
-            btn5.Size = new Size(78, 71);
-            btn5.TabIndex = 10;
-            btn5.Text = "5";
-            btn5.UseVisualStyleBackColor = true;
-            btn5.Click += EnterNumbers;
+            Btn5.Font = new Font("Malgun Gothic", 21.75F, FontStyle.Bold, GraphicsUnit.Point);
+            Btn5.Location = new Point(96, 229);
+            Btn5.Name = "Btn5";
+            Btn5.Size = new Size(78, 71);
+            Btn5.TabIndex = 10;
+            Btn5.Text = "5";
+            Btn5.UseVisualStyleBackColor = true;
+            Btn5.Click += EnterNumbers;
             // 
-            // btn4
+            // Btn4
             // 
-            btn4.Font = new Font("Malgun Gothic", 21.75F, FontStyle.Bold, GraphicsUnit.Point);
-            btn4.Location = new Point(12, 229);
-            btn4.Name = "btn4";
-            btn4.Size = new Size(78, 71);
-            btn4.TabIndex = 9;
-            btn4.Text = "4";
-            btn4.UseVisualStyleBackColor = true;
-            btn4.Click += EnterNumbers;
+            Btn4.Font = new Font("Malgun Gothic", 21.75F, FontStyle.Bold, GraphicsUnit.Point);
+            Btn4.Location = new Point(12, 229);
+            Btn4.Name = "Btn4";
+            Btn4.Size = new Size(78, 71);
+            Btn4.TabIndex = 9;
+            Btn4.Text = "4";
+            Btn4.UseVisualStyleBackColor = true;
+            Btn4.Click += EnterNumbers;
             // 
-            // btnMuti
+            // BtnMuti
             // 
-            btnMuti.Font = new Font("Malgun Gothic", 21.75F, FontStyle.Bold, GraphicsUnit.Point);
-            btnMuti.Location = new Point(264, 306);
-            btnMuti.Name = "btnMuti";
-            btnMuti.Size = new Size(78, 71);
-            btnMuti.TabIndex = 16;
-            btnMuti.Text = "*";
-            btnMuti.UseVisualStyleBackColor = true;
-            btnMuti.Click += NumberOper;
+            BtnMuti.Font = new Font("Malgun Gothic", 21.75F, FontStyle.Bold, GraphicsUnit.Point);
+            BtnMuti.Location = new Point(264, 306);
+            BtnMuti.Name = "BtnMuti";
+            BtnMuti.Size = new Size(78, 71);
+            BtnMuti.TabIndex = 16;
+            BtnMuti.Text = "*";
+            BtnMuti.UseVisualStyleBackColor = true;
+            BtnMuti.Click += NumberOper;
             // 
-            // btn3
+            // Btn3
             // 
-            btn3.Font = new Font("Malgun Gothic", 21.75F, FontStyle.Bold, GraphicsUnit.Point);
-            btn3.Location = new Point(180, 306);
-            btn3.Name = "btn3";
-            btn3.Size = new Size(78, 71);
-            btn3.TabIndex = 15;
-            btn3.Text = "3";
-            btn3.UseVisualStyleBackColor = true;
-            btn3.Click += EnterNumbers;
+            Btn3.Font = new Font("Malgun Gothic", 21.75F, FontStyle.Bold, GraphicsUnit.Point);
+            Btn3.Location = new Point(180, 306);
+            Btn3.Name = "Btn3";
+            Btn3.Size = new Size(78, 71);
+            Btn3.TabIndex = 15;
+            Btn3.Text = "3";
+            Btn3.UseVisualStyleBackColor = true;
+            Btn3.Click += EnterNumbers;
             // 
-            // btn2
+            // Btn2
             // 
-            btn2.Font = new Font("Malgun Gothic", 21.75F, FontStyle.Bold, GraphicsUnit.Point);
-            btn2.Location = new Point(96, 306);
-            btn2.Name = "btn2";
-            btn2.Size = new Size(78, 71);
-            btn2.TabIndex = 14;
-            btn2.Text = "2";
-            btn2.UseVisualStyleBackColor = true;
-            btn2.Click += EnterNumbers;
+            Btn2.Font = new Font("Malgun Gothic", 21.75F, FontStyle.Bold, GraphicsUnit.Point);
+            Btn2.Location = new Point(96, 306);
+            Btn2.Name = "Btn2";
+            Btn2.Size = new Size(78, 71);
+            Btn2.TabIndex = 14;
+            Btn2.Text = "2";
+            Btn2.UseVisualStyleBackColor = true;
+            Btn2.Click += EnterNumbers;
             // 
-            // btn1
+            // Btn1
             // 
-            btn1.Font = new Font("Malgun Gothic", 21.75F, FontStyle.Bold, GraphicsUnit.Point);
-            btn1.Location = new Point(12, 306);
-            btn1.Name = "btn1";
-            btn1.Size = new Size(78, 71);
-            btn1.TabIndex = 13;
-            btn1.Text = "1";
-            btn1.UseVisualStyleBackColor = true;
-            btn1.Click += EnterNumbers;
+            Btn1.Font = new Font("Malgun Gothic", 21.75F, FontStyle.Bold, GraphicsUnit.Point);
+            Btn1.Location = new Point(12, 306);
+            Btn1.Name = "Btn1";
+            Btn1.Size = new Size(78, 71);
+            Btn1.TabIndex = 13;
+            Btn1.Text = "1";
+            Btn1.UseVisualStyleBackColor = true;
+            Btn1.Click += EnterNumbers;
             // 
-            // btnDiv
+            // BtnDiv
             // 
-            btnDiv.Font = new Font("Malgun Gothic", 21.75F, FontStyle.Bold, GraphicsUnit.Point);
-            btnDiv.Location = new Point(264, 383);
-            btnDiv.Name = "btnDiv";
-            btnDiv.Size = new Size(78, 71);
-            btnDiv.TabIndex = 20;
-            btnDiv.Text = "/";
-            btnDiv.UseVisualStyleBackColor = true;
-            btnDiv.Click += NumberOper;
+            BtnDiv.Font = new Font("Malgun Gothic", 21.75F, FontStyle.Bold, GraphicsUnit.Point);
+            BtnDiv.Location = new Point(264, 383);
+            BtnDiv.Name = "BtnDiv";
+            BtnDiv.Size = new Size(78, 71);
+            BtnDiv.TabIndex = 20;
+            BtnDiv.Text = "/";
+            BtnDiv.UseVisualStyleBackColor = true;
+            BtnDiv.Click += NumberOper;
             // 
-            // btnEquals
+            // BtnEquals
             // 
-            btnEquals.Font = new Font("Malgun Gothic", 21.75F, FontStyle.Bold, GraphicsUnit.Point);
-            btnEquals.Location = new Point(180, 383);
-            btnEquals.Name = "btnEquals";
-            btnEquals.Size = new Size(78, 71);
-            btnEquals.TabIndex = 19;
-            btnEquals.Text = "=";
-            btnEquals.UseVisualStyleBackColor = true;
-            btnEquals.Click += BtnEquals_Click;
+            BtnEquals.Font = new Font("Malgun Gothic", 21.75F, FontStyle.Bold, GraphicsUnit.Point);
+            BtnEquals.Location = new Point(180, 383);
+            BtnEquals.Name = "BtnEquals";
+            BtnEquals.Size = new Size(78, 71);
+            BtnEquals.TabIndex = 19;
+            BtnEquals.Text = "=";
+            BtnEquals.UseVisualStyleBackColor = true;
+            BtnEquals.Click += BtnEquals_Click;
             // 
-            // btndot
+            // Btndot
             // 
-            btndot.Font = new Font("Malgun Gothic", 21.75F, FontStyle.Bold, GraphicsUnit.Point);
-            btndot.Location = new Point(96, 383);
-            btndot.Name = "btndot";
-            btndot.Size = new Size(78, 71);
-            btndot.TabIndex = 18;
-            btndot.Text = ".";
-            btndot.UseVisualStyleBackColor = true;
-            btndot.Click += EnterNumbers;
+            Btndot.Font = new Font("Malgun Gothic", 21.75F, FontStyle.Bold, GraphicsUnit.Point);
+            Btndot.Location = new Point(96, 383);
+            Btndot.Name = "Btndot";
+            Btndot.Size = new Size(78, 71);
+            Btndot.TabIndex = 18;
+            Btndot.Text = ".";
+            Btndot.UseVisualStyleBackColor = true;
+            Btndot.Click += EnterNumbers;
             // 
-            // btn0
+            // Btn0
             // 
-            btn0.Font = new Font("Malgun Gothic", 21.75F, FontStyle.Bold, GraphicsUnit.Point);
-            btn0.Location = new Point(12, 383);
-            btn0.Name = "btn0";
-            btn0.Size = new Size(78, 71);
-            btn0.TabIndex = 17;
-            btn0.Text = "0";
-            btn0.UseVisualStyleBackColor = true;
-            btn0.Click += EnterNumbers;
+            Btn0.Font = new Font("Malgun Gothic", 21.75F, FontStyle.Bold, GraphicsUnit.Point);
+            Btn0.Location = new Point(12, 383);
+            Btn0.Name = "Btn0";
+            Btn0.Size = new Size(78, 71);
+            Btn0.TabIndex = 17;
+            Btn0.Text = "0";
+            Btn0.UseVisualStyleBackColor = true;
+            Btn0.Click += EnterNumbers;
             // 
             // menuStrip1
             // 
@@ -335,92 +335,92 @@
             simpleToolStripMenuItem.Text = "Standard";
             simpleToolStripMenuItem.Click += StandardToolStripMenuItem_Click;
             // 
-            // btnPi
+            // BtnPi
             // 
-            btnPi.Font = new Font("Malgun Gothic", 21.75F, FontStyle.Bold, GraphicsUnit.Point);
-            btnPi.Location = new Point(376, 75);
-            btnPi.Name = "btnPi";
-            btnPi.Size = new Size(78, 71);
-            btnPi.TabIndex = 22;
-            btnPi.Text = "π";
-            btnPi.UseVisualStyleBackColor = true;
-            btnPi.Click += BtnPi_Click;
+            BtnPi.Font = new Font("Malgun Gothic", 21.75F, FontStyle.Bold, GraphicsUnit.Point);
+            BtnPi.Location = new Point(376, 75);
+            BtnPi.Name = "BtnPi";
+            BtnPi.Size = new Size(78, 71);
+            BtnPi.TabIndex = 22;
+            BtnPi.Text = "π";
+            BtnPi.UseVisualStyleBackColor = true;
+            BtnPi.Click += BtnPi_Click;
             // 
-            // btnLog
+            // BtnLog
             // 
-            btnLog.Font = new Font("Malgun Gothic", 21.75F, FontStyle.Bold, GraphicsUnit.Point);
-            btnLog.Location = new Point(460, 75);
-            btnLog.Name = "btnLog";
-            btnLog.Size = new Size(78, 71);
-            btnLog.TabIndex = 23;
-            btnLog.Text = "Log";
-            btnLog.UseVisualStyleBackColor = true;
-            btnLog.Click += BtnLog_Click;
+            BtnLog.Font = new Font("Malgun Gothic", 21.75F, FontStyle.Bold, GraphicsUnit.Point);
+            BtnLog.Location = new Point(460, 75);
+            BtnLog.Name = "BtnLog";
+            BtnLog.Size = new Size(78, 71);
+            BtnLog.TabIndex = 23;
+            BtnLog.Text = "Log";
+            BtnLog.UseVisualStyleBackColor = true;
+            BtnLog.Click += BtnLog_Click;
             // 
-            // btnSq
+            // BtnSq
             // 
-            btnSq.Font = new Font("Malgun Gothic", 20.25F, FontStyle.Bold, GraphicsUnit.Point);
-            btnSq.Location = new Point(544, 75);
-            btnSq.Name = "btnSq";
-            btnSq.Size = new Size(78, 71);
-            btnSq.TabIndex = 24;
-            btnSq.Text = "Sqrt";
-            btnSq.UseVisualStyleBackColor = true;
-            btnSq.Click += BtnSq_Click;
+            BtnSq.Font = new Font("Malgun Gothic", 20.25F, FontStyle.Bold, GraphicsUnit.Point);
+            BtnSq.Location = new Point(544, 75);
+            BtnSq.Name = "BtnSq";
+            BtnSq.Size = new Size(78, 71);
+            BtnSq.TabIndex = 24;
+            BtnSq.Text = "Sqrt";
+            BtnSq.UseVisualStyleBackColor = true;
+            BtnSq.Click += BtnSq_Click;
             // 
-            // btnx2
+            // Btnx2
             // 
-            btnx2.Font = new Font("Malgun Gothic", 21.75F, FontStyle.Bold, GraphicsUnit.Point);
-            btnx2.Location = new Point(628, 75);
-            btnx2.Name = "btnx2";
-            btnx2.Size = new Size(78, 71);
-            btnx2.TabIndex = 25;
-            btnx2.Text = "x²";
-            btnx2.UseVisualStyleBackColor = true;
-            btnx2.Click += Btnx2_Click;
+            Btnx2.Font = new Font("Malgun Gothic", 21.75F, FontStyle.Bold, GraphicsUnit.Point);
+            Btnx2.Location = new Point(628, 75);
+            Btnx2.Name = "Btnx2";
+            Btnx2.Size = new Size(78, 71);
+            Btnx2.TabIndex = 25;
+            Btnx2.Text = "x²";
+            Btnx2.UseVisualStyleBackColor = true;
+            Btnx2.Click += Btnx2_Click;
             // 
-            // btnx3
+            // Btnx3
             // 
-            btnx3.Font = new Font("Malgun Gothic", 21.75F, FontStyle.Bold, GraphicsUnit.Point);
-            btnx3.Location = new Point(628, 152);
-            btnx3.Name = "btnx3";
-            btnx3.Size = new Size(78, 71);
-            btnx3.TabIndex = 29;
-            btnx3.Text = "x³";
-            btnx3.UseVisualStyleBackColor = true;
+            Btnx3.Font = new Font("Malgun Gothic", 21.75F, FontStyle.Bold, GraphicsUnit.Point);
+            Btnx3.Location = new Point(628, 152);
+            Btnx3.Name = "Btnx3";
+            Btnx3.Size = new Size(78, 71);
+            Btnx3.TabIndex = 29;
+            Btnx3.Text = "x³";
+            Btnx3.UseVisualStyleBackColor = true;
             // 
-            // btnDec
+            // BtnDec
             // 
-            btnDec.Font = new Font("Malgun Gothic", 21.75F, FontStyle.Bold, GraphicsUnit.Point);
-            btnDec.Location = new Point(544, 152);
-            btnDec.Name = "btnDec";
-            btnDec.Size = new Size(78, 71);
-            btnDec.TabIndex = 28;
-            btnDec.Text = "Dec";
-            btnDec.UseVisualStyleBackColor = true;
-            btnDec.Click += BtnDec_Click;
+            BtnDec.Font = new Font("Malgun Gothic", 21.75F, FontStyle.Bold, GraphicsUnit.Point);
+            BtnDec.Location = new Point(544, 152);
+            BtnDec.Name = "BtnDec";
+            BtnDec.Size = new Size(78, 71);
+            BtnDec.TabIndex = 28;
+            BtnDec.Text = "Dec";
+            BtnDec.UseVisualStyleBackColor = true;
+            BtnDec.Click += BtnDec_Click;
             // 
-            // btnSin
+            // BtnSin
             // 
-            btnSin.Font = new Font("Malgun Gothic", 21.75F, FontStyle.Bold, GraphicsUnit.Point);
-            btnSin.Location = new Point(460, 152);
-            btnSin.Name = "btnSin";
-            btnSin.Size = new Size(78, 71);
-            btnSin.TabIndex = 27;
-            btnSin.Text = "Sin";
-            btnSin.UseVisualStyleBackColor = true;
-            btnSin.Click += BtnSin_Click;
+            BtnSin.Font = new Font("Malgun Gothic", 21.75F, FontStyle.Bold, GraphicsUnit.Point);
+            BtnSin.Location = new Point(460, 152);
+            BtnSin.Name = "BtnSin";
+            BtnSin.Size = new Size(78, 71);
+            BtnSin.TabIndex = 27;
+            BtnSin.Text = "Sin";
+            BtnSin.UseVisualStyleBackColor = true;
+            BtnSin.Click += BtnSin_Click;
             // 
-            // btnSinh
+            // BtnSinh
             // 
-            btnSinh.Font = new Font("Malgun Gothic", 18F, FontStyle.Bold, GraphicsUnit.Point);
-            btnSinh.Location = new Point(376, 152);
-            btnSinh.Name = "btnSinh";
-            btnSinh.Size = new Size(78, 71);
-            btnSinh.TabIndex = 26;
-            btnSinh.Text = "Sinh";
-            btnSinh.UseVisualStyleBackColor = true;
-            btnSinh.Click += BtnSinh_Click;
+            BtnSinh.Font = new Font("Malgun Gothic", 18F, FontStyle.Bold, GraphicsUnit.Point);
+            BtnSinh.Location = new Point(376, 152);
+            BtnSinh.Name = "BtnSinh";
+            BtnSinh.Size = new Size(78, 71);
+            BtnSinh.TabIndex = 26;
+            BtnSinh.Text = "Sinh";
+            BtnSinh.UseVisualStyleBackColor = true;
+            BtnSinh.Click += BtnSinh_Click;
             // 
             // btnlnx
             // 
@@ -473,36 +473,36 @@
             btn1x.Text = "1/x";
             btn1x.UseVisualStyleBackColor = true;
             // 
-            // btnBin
+            // BtnBin
             // 
-            btnBin.Font = new Font("Malgun Gothic", 21.75F, FontStyle.Bold, GraphicsUnit.Point);
-            btnBin.Location = new Point(544, 229);
-            btnBin.Name = "btnBin";
-            btnBin.Size = new Size(78, 71);
-            btnBin.TabIndex = 32;
-            btnBin.Text = "Bin";
-            btnBin.UseVisualStyleBackColor = true;
-            btnBin.Click += BtnBin_Click;
+            BtnBin.Font = new Font("Malgun Gothic", 21.75F, FontStyle.Bold, GraphicsUnit.Point);
+            BtnBin.Location = new Point(544, 229);
+            BtnBin.Name = "BtnBin";
+            BtnBin.Size = new Size(78, 71);
+            BtnBin.TabIndex = 32;
+            BtnBin.Text = "Bin";
+            BtnBin.UseVisualStyleBackColor = true;
+            BtnBin.Click += BtnBin_Click;
             // 
-            // btnCos
+            // BtnCos
             // 
-            btnCos.Font = new Font("Malgun Gothic", 21.75F, FontStyle.Bold, GraphicsUnit.Point);
-            btnCos.Location = new Point(460, 229);
-            btnCos.Name = "btnCos";
-            btnCos.Size = new Size(78, 71);
-            btnCos.TabIndex = 31;
-            btnCos.Text = "Cos";
-            btnCos.UseVisualStyleBackColor = true;
+            BtnCos.Font = new Font("Malgun Gothic", 21.75F, FontStyle.Bold, GraphicsUnit.Point);
+            BtnCos.Location = new Point(460, 229);
+            BtnCos.Name = "BtnCos";
+            BtnCos.Size = new Size(78, 71);
+            BtnCos.TabIndex = 31;
+            BtnCos.Text = "Cos";
+            BtnCos.UseVisualStyleBackColor = true;
             // 
-            // btnCosh
+            // BtnCosh
             // 
-            btnCosh.Font = new Font("Malgun Gothic", 18F, FontStyle.Bold, GraphicsUnit.Point);
-            btnCosh.Location = new Point(376, 229);
-            btnCosh.Name = "btnCosh";
-            btnCosh.Size = new Size(78, 71);
-            btnCosh.TabIndex = 30;
-            btnCosh.Text = "Cosh";
-            btnCosh.UseVisualStyleBackColor = true;
+            BtnCosh.Font = new Font("Malgun Gothic", 18F, FontStyle.Bold, GraphicsUnit.Point);
+            BtnCosh.Location = new Point(376, 229);
+            BtnCosh.Name = "BtnCosh";
+            BtnCosh.Size = new Size(78, 71);
+            BtnCosh.TabIndex = 30;
+            BtnCosh.Text = "Cosh";
+            BtnCosh.UseVisualStyleBackColor = true;
             // 
             // btnPer
             // 
@@ -560,37 +560,37 @@
             Controls.Add(btnTan);
             Controls.Add(btnTanh);
             Controls.Add(btn1x);
-            Controls.Add(btnBin);
-            Controls.Add(btnCos);
-            Controls.Add(btnCosh);
-            Controls.Add(btnx3);
-            Controls.Add(btnDec);
-            Controls.Add(btnSin);
-            Controls.Add(btnSinh);
-            Controls.Add(btnx2);
-            Controls.Add(btnSq);
-            Controls.Add(btnLog);
-            Controls.Add(btnPi);
-            Controls.Add(btnDiv);
-            Controls.Add(btnEquals);
-            Controls.Add(btndot);
-            Controls.Add(btn0);
-            Controls.Add(btnMuti);
-            Controls.Add(btn3);
-            Controls.Add(btn2);
-            Controls.Add(btn1);
-            Controls.Add(btnMinus);
-            Controls.Add(btn6);
-            Controls.Add(btn5);
-            Controls.Add(btn4);
-            Controls.Add(btnPlus);
-            Controls.Add(btn9);
-            Controls.Add(btn8);
-            Controls.Add(btn7);
-            Controls.Add(btnPM);
-            Controls.Add(btnClearEntry);
-            Controls.Add(btnClear);
-            Controls.Add(btnBS);
+            Controls.Add(BtnBin);
+            Controls.Add(BtnCos);
+            Controls.Add(BtnCosh);
+            Controls.Add(Btnx3);
+            Controls.Add(BtnDec);
+            Controls.Add(BtnSin);
+            Controls.Add(BtnSinh);
+            Controls.Add(Btnx2);
+            Controls.Add(BtnSq);
+            Controls.Add(BtnLog);
+            Controls.Add(BtnPi);
+            Controls.Add(BtnDiv);
+            Controls.Add(BtnEquals);
+            Controls.Add(Btndot);
+            Controls.Add(Btn0);
+            Controls.Add(BtnMuti);
+            Controls.Add(Btn3);
+            Controls.Add(Btn2);
+            Controls.Add(Btn1);
+            Controls.Add(BtnMinus);
+            Controls.Add(Btn6);
+            Controls.Add(Btn5);
+            Controls.Add(Btn4);
+            Controls.Add(BtnPlus);
+            Controls.Add(Btn9);
+            Controls.Add(Btn8);
+            Controls.Add(Btn7);
+            Controls.Add(BtnPM);
+            Controls.Add(BtnClearEntry);
+            Controls.Add(BtnClear);
+            Controls.Add(BtnBS);
             Controls.Add(txtResult);
             Controls.Add(menuStrip1);
             MainMenuStrip = menuStrip1;
@@ -607,46 +607,46 @@
         #endregion
 
         private TextBox txtResult;
-        private Button btnBS;
-        private Button btnClear;
-        private Button btnClearEntry;
-        private Button btnPM;
-        private Button btnPlus;
-        private Button btn9;
-        private Button btn8;
-        private Button btn7;
-        private Button btnMinus;
-        private Button btn6;
-        private Button btn5;
-        private Button btn4;
-        private Button btnMuti;
-        private Button btn3;
-        private Button btn2;
-        private Button btn1;
-        private Button btnDiv;
-        private Button btnEquals;
-        private Button btndot;
-        private Button btn0;
+        private Button BtnBS;
+        private Button BtnClear;
+        private Button BtnClearEntry;
+        private Button BtnPM;
+        private Button BtnPlus;
+        private Button Btn9;
+        private Button Btn8;
+        private Button Btn7;
+        private Button BtnMinus;
+        private Button Btn6;
+        private Button Btn5;
+        private Button Btn4;
+        private Button BtnMuti;
+        private Button Btn3;
+        private Button Btn2;
+        private Button Btn1;
+        private Button BtnDiv;
+        private Button BtnEquals;
+        private Button Btndot;
+        private Button Btn0;
         private MenuStrip menuStrip1;
         private ToolStripMenuItem fileToolStripMenuItem;
         private ToolStripMenuItem scientificToolStripMenuItem;
         private ToolStripMenuItem simpleToolStripMenuItem;
-        private Button btnPi;
-        private Button btnLog;
-        private Button btnSq;
-        private Button btnx2;
-        private Button btnx3;
-        private Button btnDec;
-        private Button btnSin;
-        private Button btnSinh;
+        private Button BtnPi;
+        private Button BtnLog;
+        private Button BtnSq;
+        private Button Btnx2;
+        private Button Btnx3;
+        private Button BtnDec;
+        private Button BtnSin;
+        private Button BtnSinh;
         private Button btnlnx;
         private Button btnHex;
         private Button btnTan;
         private Button btnTanh;
         private Button btn1x;
-        private Button btnBin;
-        private Button btnCos;
-        private Button btnCosh;
+        private Button BtnBin;
+        private Button BtnCos;
+        private Button BtnCosh;
         private Button btnPer;
         private Button btnOct;
         private Button btnMod;

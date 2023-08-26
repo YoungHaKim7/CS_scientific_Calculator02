@@ -160,7 +160,7 @@ namespace CS_scientific_Calculator02
             si = Math.Sin(si);
             txtResult.Text = Convert.ToString(si);
         }
-         
+
         private void BtnPer_Click(object sender, EventArgs e)
         {
             double a;
