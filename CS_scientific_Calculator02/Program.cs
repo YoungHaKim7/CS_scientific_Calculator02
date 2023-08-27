@@ -1,3 +1,6 @@
+using System;
+using System.Windows.Forms;
+
 namespace CS_scientific_Calculator02
 {
     internal static class Program

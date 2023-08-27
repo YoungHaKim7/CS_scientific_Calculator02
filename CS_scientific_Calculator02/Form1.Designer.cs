@@ -1,4 +1,7 @@
-﻿namespace CS_scientific_Calculator02
+﻿using System.Drawing;
+using System.Windows.Forms;
+
+namespace CS_scientific_Calculator02
 {
     partial class Form1
     {
